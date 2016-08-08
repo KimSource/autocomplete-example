@@ -1,0 +1,19 @@
+디렉티브란?
+쉽게 말해 “AngularJS의 HTML Compiler에 의해 해석된 특정한 행위의 기능을 가진 DOM 엘리먼트”입니다.
+
+Use the ':host' pseudo-class selector to target styles in the element that hosts
+the component (as opposed to targeting elements inside the component's template)
+:host 의사 클래스 선택자를 사용해서 컴포넌트 자체 엘리먼트를 잡을 수 있다
+
+http.get을 사용하면 Observable이 나온다
+이걸 서비스가 리턴하게 해서 컴포넌트에서 받은 후 subscribe로 값을 가져다 사용할 수 있다
+
+ngFor로 생성한 컴포넌트에 클릭 이벤트를 줬는데 어떻게 클릭한 항목을 가져올 수 있는지 고민하다가 발견
+*ngFor="let city of cities" (click)="onClick($event, city)"
+
+home
+  search
+    input
+    city-list
+      city *ngFor
+  city-detail
